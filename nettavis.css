@@ -37,7 +37,7 @@ nav img{
 nav a, nav div {
     text-align: center;
     display: block;
-    background-color: darkgrey;
+    background-color: sandybrown;
     text-decoration: none;
     font-size: 40px;
     color: black;
@@ -46,6 +46,19 @@ nav a, nav div {
     line-height: 80px;
     box-sizing: border-box;
     height: 80px;
+}
+
+nav div{
+    background-color: goldenrod;
+    border-bottom-left-radius: 30px;
+}
+
+#twitter {
+    border-bottom-right-radius: 30px;
+}
+
+#vg, #tv2 {
+    background-color: silver;
 }
 
 #logo, #vg, #tv2, #facebook, #youtube {
@@ -124,6 +137,14 @@ main a h1{
     main {
         width: 100vw;
         margin-top: 0;
+    }
+    #twitter {
+        border-bottom-right-radius: 0;
+        border-right: none;
+    }
+    nav div {
+        border-bottom-left-radius: 0;
+        border-left: none;
     }
 }
 
