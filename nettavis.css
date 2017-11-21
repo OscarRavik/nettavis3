@@ -146,6 +146,9 @@ main a h1{
         border-bottom-left-radius: 0;
         border-left: none;
     }
+    body {
+        background: none;
+    }
 }
 
 
