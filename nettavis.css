@@ -1,0 +1,131 @@
+
+*{
+    margin:0;
+    box-sizing:border-box;
+    padding:0;
+    Font-family:sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+body {
+     background-image: url("bilder/background.jpg");
+     background-repeat: repeat;
+     background-attachment: fixed;
+     background-size: 100%;
+ }
+
+
+nav {
+    display: grid;
+    grid-template-columns: 120px repeat(5, 1fr);
+    width: 80vw;
+    margin: auto;
+    height: 60px;
+}
+
+nav img{
+    width: 60%;
+    margin: auto;
+    border-radius: 50%;
+    padding-top: 3px;
+}
+
+#twitter {
+    min-width: 150px;
+}
+nav a, nav div {
+    text-align: center;
+    display: block;
+    background-color: darkgrey;
+    text-decoration: none;
+    font-size: 40px;
+    color: black;
+    border: solid black 3px;
+    border-top: 0;
+    line-height: 80px;
+    box-sizing: border-box;
+    height: 80px;
+}
+
+#logo, #vg, #tv2, #facebook, #youtube {
+    border-right: none;
+}
+
+nav a:hover {
+    background-color: grey;
+    text-decoration: underline;
+}
+
+
+
+
+
+main{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20vw;
+    width: 70vw;
+    background-color: white;
+}
+
+
+main a:hover{
+    text-decoration: underline;
+}
+
+main a img{
+    width: 100%;
+}
+main a h1{
+    width: 100%;
+    background-color: white;
+}
+
+
+.span1 {grid-column: span 1;}
+.span2 {grid-column: span 2;}
+.span3 {grid-column: span 3;}
+.span4 {grid-column: span 4;}
+.span5 {grid-column: span 5;}
+.span6 {grid-column: span 6;}
+.span7 {grid-column: span 7;}
+.span8 {grid-column: span 8;}
+.span9 {grid-column: span 9;}
+.span10 {grid-column: span 10;}
+.span11 {grid-column: span 11;}
+.span12 {grid-column: span 12;}
+
+
+#artikler {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+    padding: 30px;
+}
+@media (max-width: 1125px) {
+    #artikler {
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+    nav {
+        width: 100vw;
+    }
+
+    nav a, nav div {
+        font-size: 25px;
+        line-height: 60px;
+        height: 60px;
+    }
+
+    nav img {
+        width: 45%;
+    }
+    main {
+        width: 100vw;
+        margin-top: 0;
+    }
+}
+
+
+
